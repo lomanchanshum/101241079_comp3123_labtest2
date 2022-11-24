@@ -32,7 +32,7 @@ function App() {
 
   const fecthWeather = async (e) => {
     e.preventDefault();
-    const  response = await
+    const response = await
       axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`
       );
       updateWeather(response.data)
